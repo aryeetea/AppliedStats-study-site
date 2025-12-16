@@ -1,0 +1,12 @@
+
+body{margin:0;font-family:system-ui;background:#fbf6e6}
+.hidden{display:none}
+.intro{height:100vh;display:grid;place-items:center;background:#ffe58a}
+.intro-card{background:white;padding:40px;border-radius:20px;animation:float 3s infinite}
+.pop span{color:#d4a017}
+.btn{padding:12px 20px;border-radius:14px;border:none;background:#ffd95a;font-weight:900}
+.tabs button{margin:6px;padding:10px;border-radius:12px;border:none;background:#ffe58a}
+.question{background:white;padding:20px;border-radius:18px;margin:20px}
+.correct{color:green;font-weight:800}
+.wrong{color:red;font-weight:800}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}

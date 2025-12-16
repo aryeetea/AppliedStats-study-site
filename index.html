@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aileen’s Math Study ✏️🐶</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section id="intro" class="intro">
+  <div class="intro-card">
+    <h1 class="pop">Welcome to <span>Aileen’s Math Study</span></h1>
+    <p>Statistics • Chapter 9 • One‑Proportion Z Tests</p>
+    <button class="btn big" onclick="startSite()">Start Studying →</button>
+  </div>
+</section>
+
+<section id="site" class="hidden">
+<header class="topbar">
+  <h2>🐶 Aileen’s Math Study</h2>
+  <div class="scorebox">Score: <span id="score">0</span>/100</div>
+</header>
+
+<nav class="tabs">
+  <button onclick="showTab('learn')">Learn</button>
+  <button onclick="showTab('practice')">Practice</button>
+  <button onclick="showTab('quiz')">Quiz</button>
+</nav>
+
+<section id="learn" class="tab">
+  <h3>📘 Learn: 1‑Proportion Z Test</h3>
+  <ul>
+    <li><b>p₀</b> = claimed population proportion</li>
+    <li><b>x</b> = number of successes</li>
+    <li><b>n</b> = sample size</li>
+    <li><b>p̂</b> = x / n</li>
+    <li><b>SE</b> = √(p₀(1−p₀)/n)</li>
+    <li><b>z</b> = (p̂ − p₀) / SE</li>
+    <li><b>Decision rule:</b> p‑value ≤ α → Reject H₀</li>
+  </ul>
+</section>
+
+<section id="practice" class="tab hidden">
+  <h3>✏️ Practice</h3>
+  <div id="practiceBox"></div>
+</section>
+
+<section id="quiz" class="tab hidden">
+  <h3>📝 Quiz Mode (100 Questions)</h3>
+  <div id="quizBox"></div>
+</section>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
